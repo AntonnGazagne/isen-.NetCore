@@ -1,6 +1,7 @@
 # Prérequis
-*Installer Visual studio Code
-*Installer .Net Core SDK 2.2
+Installer Visual studio Code
+
+Installer .Net Core SDK 2.2
 
 # Préparation de la structure de la solution
 mkdir isen.DotNet
