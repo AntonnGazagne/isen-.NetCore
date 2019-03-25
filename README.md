@@ -74,7 +74,7 @@ une classe MyCollection
 
 ### Aparté sur les types nullables
 
-'''csharp
+''' csharp
 
     //Person est un type de référence
     Person person;//null

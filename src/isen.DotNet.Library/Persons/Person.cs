@@ -6,16 +6,25 @@ namespace isen.DotNet.Library.Persons
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public DateTime DateOfBirth{ get; set; }
+        public DateTime? DateOfBirth{ get; set; }
+
+        public int? Age
+        {
+            get
+            {
+                
+            }
+        }
+
 
         public Person(
             string firstName,
             string LastName,
-            DateTime DateOfBirth) : 
+            DateTime dateOfBirth) : 
             this(firstName, LastName)
             {
-                DateOfBirth = DateOfBirth
+                DateOfBirth = dateOfBirth;
             }
-        )
+        
     }
 }
