@@ -51,6 +51,16 @@ namespace isen.DotNet.Library.Tests
             list.Add("C");
             list.Add("D");
 
+            
+            try
+            {
+                list.RemoveAt(5);
+            }
+            catch(Exception e)
+            {
+                Assert.True(e is IndexOutOfRangeException);
+            }
+
             list.RemoveAt(0);
             Assert.True(list.Count == 3);
             Assert.True(list[0] == "B");
@@ -68,6 +78,25 @@ namespace isen.DotNet.Library.Tests
 
             list.RemoveAt(0);
             Assert.True(list.Count == 0);
+
+            try
+            {
+                list.RemoveAt(0);
+            }
+            catch(Exception e)
+            {
+                Assert.True(e is IndexOutOfRangeException);
+            }
+
+
+            try
+            {
+                list.RemoveAt(-1);
+            }
+            catch(Exception e)
+            {
+                Assert.True(e is IndexOutOfRangeException);
+            }
         }
     }
 }

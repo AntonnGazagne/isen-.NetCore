@@ -56,8 +56,7 @@ namespace isen.DotNet.Library.Lists
             //copier les éléments du tableau initial
             for (int i = 0 ; i < Count-1; i ++)
             {
-                if(i < index) tmp[i] = _values[i];
-                else tmp[i] = _values[i+1];
+                tmp[i] = _values[i < index ? i : i + 1];
             }
             //Echange des tableau
             _values = tmp;
