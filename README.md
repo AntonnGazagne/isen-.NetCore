@@ -1,6 +1,6 @@
 # Prérequis
-Installer Visual studio Code
-Installer .Net Core SDK 2.2
+*Installer Visual studio Code
+*Installer .Net Core SDK 2.2
 
 # Préparation de la structure de la solution
 mkdir isen.DotNet
@@ -17,3 +17,15 @@ faire un commit initial de nos sources:
 git add .
 git commit -m "initial commit"
 git push origin master
+
+
+Créer un projet Console, dans un sous-dossier src:
+Créer le dossier src/ et naviguer dedans
+Dans le dossier src, créer isen.DotNet.ConsoleApp et naviguer dedans
+Créer le projet console : dotnet new console
+
+Créer le fichier solution(.sln):
+naviguer vers la racine du projet
+Créer le fichier .sln: dotnet new sln
+ajouter les différents éléments de la solution à ce projet(projet console)
+** dotnet sln add src/isen.DotNet.ConsoleApp/
