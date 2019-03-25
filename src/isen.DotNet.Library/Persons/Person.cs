@@ -13,9 +13,11 @@ namespace isen.DotNet.Library.Persons
             get
             {
                 if(!DateOfBirth.HasValue)
-                {
-                    
-                }
+                    return null;
+                
+                var age =
+                    DateTime
+
 
             }
         }
