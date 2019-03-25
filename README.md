@@ -74,6 +74,7 @@ une classe MyCollection
 
 ### Aparté sur les types nullables
 *** csharp
+
     //Person est un type de référence
     Person person;//null
     person = new Person();//Pas null
@@ -94,4 +95,5 @@ une classe MyCollection
     Nullable<bool> nbb; //null aussi
     var hasValue = nb.HasValue;//false
     var val = nb.Value; //true
-* * * 
+    
+*** 
