@@ -72,8 +72,8 @@ une classe MyCollection
 * Utiliser l'ampoule pour générer le using manquant et implémenter les méthode de l'interface
 * Coder ensuite les méthodes et leurs tests
 
-###Aparté sur les types nullables
-* * * csharp
+### Aparté sur les types nullables
+*** csharp
     //Person est un type de référence
     Person person;//null
     person = new Person();//Pas null
