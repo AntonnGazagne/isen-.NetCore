@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isen.DotNet.ConsoleApp", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isen.DotNet.Library", "src\isen.DotNet.Library\isen.DotNet.Library.csproj", "{AF1B79DC-3D3E-4B2A-A4B9-C2D07D574B29}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{50ADA086-951A-4A6E-A4A1-B3ECC0E35F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "isen.DotNet.Library.Tests", "tests\isen.DotNet.Library.Tests\isen.DotNet.Library.Tests.csproj", "{E218C20B-D8AB-481C-B267-A18535B2FE8D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -46,9 +50,22 @@ Global
 		{AF1B79DC-3D3E-4B2A-A4B9-C2D07D574B29}.Release|x64.Build.0 = Release|Any CPU
 		{AF1B79DC-3D3E-4B2A-A4B9-C2D07D574B29}.Release|x86.ActiveCfg = Release|Any CPU
 		{AF1B79DC-3D3E-4B2A-A4B9-C2D07D574B29}.Release|x86.Build.0 = Release|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Debug|x64.Build.0 = Debug|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Debug|x86.Build.0 = Debug|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Release|x64.ActiveCfg = Release|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Release|x64.Build.0 = Release|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Release|x86.ActiveCfg = Release|Any CPU
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{967DA604-DAD4-49B6-898F-4363D4E61A8A} = {4F16E561-F561-4228-AD6E-94D42CE47200}
 		{AF1B79DC-3D3E-4B2A-A4B9-C2D07D574B29} = {4F16E561-F561-4228-AD6E-94D42CE47200}
+		{E218C20B-D8AB-481C-B267-A18535B2FE8D} = {50ADA086-951A-4A6E-A4A1-B3ECC0E35F8E}
 	EndGlobalSection
 EndGlobal

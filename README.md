@@ -42,3 +42,21 @@ Ajouter le projet Library comme référence du projet ConsoleApp:
 ## Création d'une classe Hellow
 Supprimer la classe autogénérée (class1.cs)
 Créer un fichier Hello.cs et coder la classe
+
+## Création d'une classe MyCollection
+Cette classe aura pour but de manipuler une liste de string dans un premier temps.
+* Créer dans le projet Library un sous-dossier Lists,
+une classe MyCollection
+
+##Ajouter un projet de test unitaires
+* A la racine de la solution, créer un dossier 'tests' et un sous-dossier isen.DotNet.Library.Tests
+* Naviguer dans ce dossier
+* dotnet new xunit
+* Ajouter ce projet au sln. depuis la racine: dotnet sln add tests/isen.DotNent.Library.Tests
+* Revenir dans le dossier du projet tests
+* Référencer le projet Library dans le projet test: dotnet add reference ../../src/isen.DotNet.Library
+* Renommer la classe générée automatiquement de test par MyCollectionTest
+* Coder un test de la méthode Add
+* Lancer le test: dotnet test
+* Coder les accesseur Indexeurs
+* Coder les méthodes de test du get et du set 
