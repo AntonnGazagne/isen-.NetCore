@@ -9,7 +9,7 @@
 * touch .gitignore(Ou créer un fichier à partir de VSC)
 * puis récupérer un gitignore spécifique à .Net Core
 
-Créer un repository sur GitHub
+Créer un repository sur GitHub:
 * git remote add origin https://github.com/AntonnGazagne/isen-.NetCore.git
 * faire un commit initial de nos sources:
 * * git add .
@@ -18,9 +18,7 @@ Créer un repository sur GitHub
 
 Créer un projet Console, dans un sous-dossier src:
 * Créer le dossier src/ et naviguer dedans
-
 * Dans le dossier src, créer isen.DotNet.ConsoleApp et naviguer dedans
-
 * Créer le projet console : dotnet new console
 
 Créer le fichier solution(.sln):
@@ -40,4 +38,7 @@ Ajouter le projet Library comme référence du projet ConsoleApp:
 * Naviguer dans le dossier projet console
 * dotnet add reference ../isen.DotNet.Library
 
-
+#  Le C#
+## Création d'une classe Hellow
+Supprimer la classe autogénérée (class1.cs)
+Créer un fichier Hello.cs et coder la classe
