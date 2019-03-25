@@ -12,7 +12,11 @@ namespace isen.DotNet.Library.Persons
         {
             get
             {
-                
+                if(!DateOfBirth.HasValue)
+                {
+                    
+                }
+
             }
         }
 
