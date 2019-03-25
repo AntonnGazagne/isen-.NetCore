@@ -4,12 +4,12 @@ using isen.DotNet.Library.Lists;
 
 namespace isen.DotNet.Library.Tests
 {
-    public class MyCollectionTest
+    public class MyCollectionStringTest
     {
         [Fact]
         public void CountTest()
         {
-            var list = new MyCollection();
+            var list = new MyCollection<string>();
             list.Add("A");
             list.Add("B");
             list.Add("C");
@@ -19,7 +19,7 @@ namespace isen.DotNet.Library.Tests
         [Fact]
         public void AddTest()
         {
-            var list = new MyCollection();
+            var list = new MyCollection<string>();
             list.Add("A");
             list.Add("B");
             list.Add("C");
@@ -30,7 +30,7 @@ namespace isen.DotNet.Library.Tests
         [Fact]
         public void IndexTest()
         {
-            var list = new MyCollection();
+            var list = new MyCollection<string>();
             list.Add("A");
             list.Add("B");
             list.Add("C");
@@ -45,7 +45,7 @@ namespace isen.DotNet.Library.Tests
         [Fact]
         public void RemoveAtTest()
         {
-            var list = new MyCollection();
+            var list = new MyCollection<string>();
             list.Add("A");
             list.Add("B");
             list.Add("C");
@@ -87,8 +87,6 @@ namespace isen.DotNet.Library.Tests
             {
                 Assert.True(e is IndexOutOfRangeException);
             }
-
-
             try
             {
                 list.RemoveAt(-1);
