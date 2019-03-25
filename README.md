@@ -60,3 +60,38 @@ une classe MyCollection
 * Lancer le test: dotnet test
 * Coder les accesseur Indexeurs
 * Coder les méthodes de test du get et du set 
+
+## Refactoring de la classe MyCollection en classe générique
+* Réécriture de la classe 'MyCollection' en classe générique
+* Modification de la classe 'MyCollection' en 'MyCollection<string>'
+* Dupliquer MyCollectionStringTest en MyCollectionCharTest
+
+## Implémentation de l'interface IList<T>
+
+* Indiquer l'implémentation de l'héritage de l'interface IList<T>
+* Utiliser l'ampoule pour générer le using manquant et implémenter les méthode de l'interface
+* Coder ensuite les méthodes et leurs tests
+
+###Aparté sur les types nullables
+* * * csharp
+    //Person est un type de référence
+    Person person;//null
+    person = new Person();//Pas null
+    person = null;//null
+
+    //int est un Value Type
+    //Les types primitifs (bool, int, long, float...)
+    //sont des types valeur
+
+    bool b; //pas null, il vaut sa valeur par défaut(false)
+    b = true; //true
+    // b = null // interdit
+
+    //bool? est un bool nullable(type référence)
+    // bool? != bool
+    //bool? == Nullable<bool>
+    bool? nb = null;//null
+    Nullable<bool> nbb; //null aussi
+    var hasValue = nb.HasValue;//false
+    var val = nb.Value; //true
+* * * 

@@ -8,13 +8,14 @@ namespace isen.DotNet.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var list = new MyCollection();
+            var list = new MyCollection<string>();
             list.Add("A");
             list.Add("B");
             list.Add("C");
-            foreach (var v in list.Values)
+            var enumerator = list.GetEnumerator();
+            while(enumerator.MoveNext())
             {
-                Console.WriteLine(v);
+                Console.WriteLine(enumerator.Current);
             }
         }
     }
