@@ -1,5 +1,6 @@
 ﻿using System;
 using isen.DotNet.Library;
+using isen.DotNet.Library.Lists;
 
 namespace isen.DotNet.ConsoleApp
 {
@@ -7,9 +8,14 @@ namespace isen.DotNet.ConsoleApp
     {
         static void Main(string[] args)
         {
-            var Hello = new Hello("Antonn");
-            var message = Hello.Greet();
-            Console.WriteLine(message);
+            var list = new MyCollection();
+            list.Add("A");
+            list.Add("B");
+            list.Add("C");
+            foreach (var v in list.Values)
+            {
+                Console.WriteLine(v);
+            }
         }
     }
 }
