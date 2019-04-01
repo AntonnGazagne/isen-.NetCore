@@ -122,3 +122,18 @@ Implémenter un mode d'affichage de base (string), overridable.
 Compléter ce mécanisme afin d'ajouter le Zipcode à l'affichage des City
 
 Puis reprendre l'affichage d'une Person.
+
+## Création de Repositories
+
+Créer cette arbo:
+[Library]
+    /Repositories
+    /Repositories/Base (Repo abstrait)
+    /Repositories/Interfaces (Base et interface spécifiques)
+    /Repositories/InMemory(implémentation InMemory)
+
+Créer la classe InMemoryCityRepository dans InMemory
+Implémenter une liste test(ModelCollection).
+
+Ajouter 2 méthodes Single : Recherche par Id et recherche par Name.
+Ecrire des tests unitaires pour tester les méthodes
