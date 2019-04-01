@@ -48,7 +48,7 @@ Cette classe aura pour but de manipuler une liste de string dans un premier temp
 * Créer dans le projet Library un sous-dossier Lists,
 une classe MyCollection
 
-##Ajouter un projet de test unitaires
+## Ajouter un projet de test unitaires
 * A la racine de la solution, créer un dossier 'tests' et un sous-dossier isen.DotNet.Library.Tests
 * Naviguer dans ce dossier
 * dotnet new xunit
@@ -98,3 +98,27 @@ une classe MyCollection
     var val = nb.Value; //true
 
 ```
+
+## Migration vers une entité
+
+Ajouter un champ Id (Int) et un champ Name.
+Pour le champ Name, On va déclarer explicitement le champ du backup privé _name
+
+### Modele City
+
+Créer dans models une classe City avec Id et Name + ZipCode
+
+Dans Person, ajouter un champ BornIn de type City
+
+### Refactoring
+
+Déplacer Id et Name vers une classe de base ,abstraite : 'BaseMode'.
+
+Faire dériver City et Person de BaseModel.
+Noter les champs Id et Name comme des override(puisque les champs sont virtuals)
+
+Implémenter un mode d'affichage de base (string), overridable.
+
+Compléter ce mécanisme afin d'ajouter le Zipcode à l'affichage des City
+
+Puis reprendre l'affichage d'une Person.
